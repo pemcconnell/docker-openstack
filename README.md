@@ -7,7 +7,7 @@ run
 **note:** you must have your openstack rc file located in `./creds.sh`
 
 ```bash
-docker run -v $(pwd)/creds.sh:/creds.sh -ti pemcconnell/dockeropenstack:latest<Paste>
+docker run -v $(pwd)/creds.sh:/creds.sh -ti pemcconnell/docker-openstack:latest
 ```
 
 
@@ -18,5 +18,5 @@ build
 You only need to do this if you want to build from source locally. This image is pulled from Docker Hub otherwise.
 
 ```bash
-docker build -t=pemcconnell/dockeropenstack:latest .
+docker build -t=pemcconnell/docker-openstack:latest .
 ```
